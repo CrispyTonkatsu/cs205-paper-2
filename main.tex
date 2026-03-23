@@ -5,6 +5,7 @@
 \usepackage{listings}
 \usepackage{xcolor}
 
+\include{src/code-style}
 
 \citestyle{acmauthoryear}
 
@@ -18,57 +19,15 @@
 }
 
 \begin{document}
-\include{code-style}
 
 \maketitle
 
-\section{Paper's Focus}
-\begin{itemize}
-	\item What moral duties do ML companies have when producing their models?
-	\item Who would be acting unethically for not taking responsibility when the models cause damange?
-	\item Is it ethically feasible to enforce regulations in the black box that are ML model?
-\end{itemize}
+\section{Introduction}
+The power to analyze relationships between large amounts of data has never been as accessible as it has been with the development of machine learning algorithms. However, there is only so much data in the world so companies that want to push what their products can do rely on large unmonitored sets of data. This can cause algorithms to be biased towards minority groups. This issue exponentiates when the usage of this technology now stretches from healthcare, recruitment, law enforcement and more. This essay will attempt to focus on salient issues brought up by the 2020 documentary "Coded Bias".
 
-\section{Background Information}
-The issue that "Coded Bias" is trying to tackle is that of algorithms and how training them can cause them to have biases against minority groups misrepresented in the used data training sets.
+\input{src/background-information}
 
-\subsection{Stakeholders}
-There are several stakeholders in this scenario with a major power imbalance between the machine learning companies and the general public:
-
-\begin{itemize}
-	\item Machine Learning Companies: As they decide what gets made and how it is made
-	\item Machine Learning Engineers: As they implement the algorithms and methods of training
-	\item Governments: As they regulate and use the algorithms for various purposes
-	\item Software companies: As they use the algorithms to enhance their businesses
-	\item General public: As they are the ones who are being judged by the algorithm
-\end{itemize}
-
-This power imbalance places the general public at a major disadvantage as machine learning algorithms rely on pre-existing data which is not guaranteed to be sanitized of biases. Therefore causing unjust profiling of individuals, rejections in jobs because of nationality/ethnicity, and more without any form of control as the mathematical models are not easily reverse engineerable and companies have no incentive to do so.
-
-\section{Documentaty's purpose}
-The documentary is aiming to bring to attention the lack of accountability machine learning algorithms and their users are facing in terms of the impact they have in the general public due to the biases. The documentary is posing a solution in terms of regulation in the usage and implementaiton of the algorithms to reduce discrimination.
-
-\section{Technological Background}
-The focus of this documentary is on machine learning algorithms therefore to be able to properly analyze them there is a need to understand the following:
-
-\begin{itemize}
-	\item Data Collection \& Cleansing
-	      \begin{itemize}
-		      \item Data collection article \cite{DataCollection}
-		      \item Data cleaning article \cite{DataCleaning}
-	      \end{itemize}
-	\item Types of Machine Learning \cite{IBM-MachineLearningTypes}:
-	      \begin{itemize}
-		      \item Supervised learning
-		      \item Unsupervised learning
-		      \item Self-supervised learning
-		      \item Reinforced learning
-		      \item Semi-supervised learning
-	      \end{itemize}
-	\item Machine Learning Algorithms (brief math overview) \cite{IBM-MachineLearningAlgorithms}
-\end{itemize}
-
-By understanding all of this, it is possible to evaluate the type of control that companies that produce and sell these algorithms have over the biases that are being baked into their software.
+\input{src/technical-background.tex}
 
 \section{Ethical Analysis}
 
