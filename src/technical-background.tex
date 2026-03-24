@@ -1,29 +1,40 @@
 \section{Technological Background}
-The focus of this documentary is on machine learning algorithms therefore to be able to properly analyze them there is a need to understand the following:
+To be able to evaluate the biases of machine learning models, the production of said models must first be understood to derive the links between the stakeholders and the impacts of the algorithms.
+
+\subsection{Machine Learning Types}
+Machine learning is a subset of artificial intelligence that uses statistical inference to adapt responses based on previous and new knowledge. This is a very powerful type of program as it provides adaptability at no code architecture change, however, these systems improve drastically the more data they have available and have analyzed. To achieve this functionality a ML model must first be trained. There are 5 key types of training that can be done on a model \cite{IBM-MachineLearningTypes}:
+
+\subsubsection{Supervised Learning}
+This type of training is done with a set of labelled data so the model can build a relationship between the provided labels and the data. This type of algorithm is heavily used in image recognition, risk assessment and fraud detection.
+
+\subsubsection{Unsupervised Learning}
+Unlike the previous method, this method tries to find unique labels to learn around. This is used in predictive modelling and pattern recognition.
+
+\subsubsection{Self-supervised Learning}
+Like unsupervised learning, this method doesn't require the labels. The main feature of this method is that it will learn the input from elsewhere and turn unsupervised problems to supervised problems by generating labels. This is common in computer vision and natural language processing.
+
+\subsubsection{Reinforcement Learning}
+This method is unlike the previous ones where there is a data set, in this method the response of the algorithm's output is rated as good or bad and through iteration it will approach the desired behaviour. This method is mainly used to train robots and game behaviours.
+
+\subsubsection{Semi-supervised Learning}
+This method is a mix of the 2 first methods. It is commonly used in most contexts to find relationships not labelled at the beginning of training.
+
+\subsection{Data Collection and Cleaning}
+The process of data collection is a key process in the development of any model, it is the core of the algorithm's ability to adapt. Therefore the data collection pipeline is complex to reduce undesired errors. The pipeline is complex and composed of many phases \cite{DataCollection}.
+
+\subsubsection{Data Collection}
+This processes involve obtaining and labelling the data. They have the main limitation of cost, providing human made labels for models is expensive. There are also issues with ensuring that the data sources are of quality and large volume which is what data acquisition and discovery do. This part of the development of models is essential to ensure the model is trained on data which is not poisoned or biased.
+
+\subsubsection{Data Cleaning}
+After the data is trained, the data needs to be analyzed for possible errors. This is the stage where the data can be validated through humans and other algorithms to ensure that the data provides results which are not noisy. This is a key part of ensuring that a model can be fair by checking the following:
 
 \begin{itemize}
-	\item Data Collection \& Cleansing
-	      \begin{itemize}
-		      \item Data collection article \cite{DataCollection}
-		      \item Data cleaning article \cite{DataCleaning}
-	      \end{itemize}
-	\item Types of Machine Learning \cite{IBM-MachineLearningTypes}:
-	      \begin{itemize}
-		      \item Supervised learning
-		      \item Unsupervised learning
-		      \item Self-supervised learning
-		      \item Reinforced learning
-		      \item Semi-supervised learning
-	      \end{itemize}
-	\item Machine Learning Algorithms (brief math overview) \cite{IBM-MachineLearningAlgorithms}
+	\item Majority groups are over-represented
+	\item Data for minority groups is poisoned
 \end{itemize}
 
-By understanding all of this, it is possible to evaluate the type of control that companies that produce and sell these algorithms have over the biases that are being baked into their software.
+\subsubsection{Fairness Training}
+To solve this Distributional Robust Training is done which is an iterative process where the weights are adjusted to converge at impartiality. There is also FR training which is a comparison process with a clean model and a trained model which is meant to protect and also remove the biases of the model without sacrificing the accuracy.
 
-\subsection{Data Collection and Cleansing}
-
-\subsection{Machine Learning}
-
-\subsection{Machine Learning Algorithms}
-
+\subsection{Facial Recognition}
 
