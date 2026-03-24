@@ -37,4 +37,13 @@ After the data is trained, the data needs to be analyzed for possible errors. Th
 To solve this Distributional Robust Training is done which is an iterative process where the weights are adjusted to converge at impartiality. There is also FR training which is a comparison process with a clean model and a trained model which is meant to protect and also remove the biases of the model without sacrificing the accuracy.
 
 \subsection{Facial Recognition}
+Facial recognition is a computer vision algorithm that is used to identify individuals against a database of stored faces for various purposes ranging from security to healthcare. Modern facial recognition is powered by machine learning as it increases the speed and effectiveness of the model when dealing with non-ideal conditions.
 
+\subsubsection{Face Detection and Alignment}
+Face detection is the process of detecting a face is in the frame, this can be implemented with and without machine learning but modern methods get more speed by using it in the process. After a face is identified, it needs to be framed to run the next parts of the algorithm, this uses facial features to locate key details in non-ideal conditions.
+
+\subsubsection{Feature Extraction}
+For this stage, the scanned features are converted into a numerical vector which is then used with machine learning to calculate similarity score to be able to locate faces in the database.
+
+\subsubsection{Face Matching}
+From the obtained vector, the values are then verified by measuring the different facial features through geometrical analysis and machine learning models for comparison.
