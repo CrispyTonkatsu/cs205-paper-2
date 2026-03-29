@@ -5,28 +5,28 @@ To be able to evaluate the biases of machine learning models, the production of 
 Machine learning is a subset of artificial intelligence that uses statistical inference to adapt responses based on previous and new knowledge. This is a very powerful type of program as it provides adaptability at no code architecture change, however, these systems improve drastically the more data they have available and have analyzed. To achieve this functionality a ML model must first be trained. There are 5 key types of training that can be done on a model \cite{IBM-MachineLearningTypes}:
 
 \subsubsection{Supervised Learning}
-This type of training is done with a set of labelled data so the model can build a relationship between the provided labels and the data. This type of algorithm is heavily used in image recognition, risk assessment and fraud detection.
+This type of training is done with a set of labelled data so the model can build a relationship between the provided labels and the data. This type of algorithm is heavily used in image recognition, risk assessment and fraud detection. \cite{SupervisedLearning}
 
 \subsubsection{Unsupervised Learning}
-Unlike the previous method, this method tries to find unique labels to learn around. This is used in predictive modelling and pattern recognition.
+Unlike the previous method, this method tries to find unique labels to learn around. This is used in predictive modelling and pattern recognition. \cite{UnsupervisedLearning}
 
 \subsubsection{Self-supervised Learning}
-Like unsupervised learning, this method doesn't require the labels. The main feature of this method is that it will learn the input from elsewhere and turn unsupervised problems to supervised problems by generating labels. This is common in computer vision and natural language processing.
+Like unsupervised learning, this method doesn't require the labels. The main feature of this method is that it will learn the input from elsewhere and turn unsupervised problems to supervised problems by generating labels. This is common in computer vision and natural language processing. \cite{Self-SupervisedLearning}
 
 \subsubsection{Reinforcement Learning}
-This method is unlike the previous ones where there is a data set, in this method the response of the algorithm's output is rated as good or bad and through iteration it will approach the desired behaviour. This method is mainly used to train robots and game behaviours.
+This method is unlike the previous ones where there is a data set, in this method the response of the algorithm's output is rated as good or bad and through iteration it will approach the desired behaviour. This method is mainly used to train robots and game behaviours. \cite{ReinforcementLearning}
 
 \subsubsection{Semi-supervised Learning}
-This method is a mix of the 2 first methods. It is commonly used in most contexts to find relationships not labelled at the beginning of training.
+This method is a mix of the 2 first methods. It is commonly used in most contexts to find relationships not labelled at the beginning of training. \cite{IBM-MachineLearningTypes}
 
-\subsection{Data Collection and Cleaning (Add more sources)}
+\subsection{Data Collection and Cleaning}
 The process of data collection is a key process in the development of any model, it is the core of the algorithm's ability to adapt. Therefore the data collection pipeline is complex to reduce undesired errors. The pipeline is complex and composed of many phases \cite{DataCollection}.
 
 \subsubsection{Data Collection}
 This processes involve obtaining and labelling the data. They have the main limitation of cost, providing human made labels for models is expensive. There are also issues with ensuring that the data sources are of quality and large volume which is what data acquisition and discovery do. This part of the development of models is essential to ensure the model is trained on data which is not poisoned or biased.
 
 \subsubsection{Data Cleaning}
-After the data is trained, the data needs to be analyzed for possible errors. This is the stage where the data can be validated through humans and other algorithms to ensure that the data provides results which are not noisy. This is a key part of ensuring that a model can be fair by checking the following:
+After the data is trained, the data needs to be analyzed for possible errors. This is the stage where the data can be validated through humans and other algorithms to ensure that the data provides results which are not noisy. This is a key part of ensuring that a model can be fair by checking the following \cite{DataCleaning}:
 
 \begin{itemize}
 	\item Majority groups are over-represented
@@ -34,10 +34,10 @@ After the data is trained, the data needs to be analyzed for possible errors. Th
 \end{itemize}
 
 \subsubsection{Fairness Training}
-To solve this Distributional Robust Training is done which is an iterative process where the weights are adjusted to converge at impartiality. There is also FR training which is a comparison process with a clean model and a trained model which is meant to protect and also remove the biases of the model without sacrificing the accuracy.
+To solve this Distributional Robust Training is done which is an iterative process where the weights are adjusted to converge at impartiality. There is also FR training which is a comparison process with a clean model and a trained model which is meant to protect and also remove the biases of the model without sacrificing the accuracy.\cite{DataCollection} \cite{FairnessTraining}
 
-\subsection{Facial Recognition (Add sources)}
-Facial recognition is a computer vision algorithm that is used to identify individuals against a database of stored faces for various purposes ranging from security to healthcare. Modern facial recognition is powered by machine learning as it increases the speed and effectiveness of the model when dealing with non-ideal conditions.
+\subsection{Facial Recognition}
+Facial recognition is a computer vision algorithm that is used to identify individuals against a database of stored faces for various purposes ranging from security to healthcare. Modern facial recognition is powered by machine learning as it increases the speed and effectiveness of the model when dealing with non-ideal conditions. \cite{CSIS-FaceRecognition} \cite{MS-FaceRecognition}
 
 \begin{figure}[H]
 	\label{Facial Recognition}
@@ -46,10 +46,12 @@ Facial recognition is a computer vision algorithm that is used to identify indiv
 \end{figure}
 
 \subsubsection{Face Detection and Alignment}
-Face detection is the process of detecting a face is in the frame, this can be implemented with and without machine learning but modern methods get more speed by using it in the process. After a face is identified, it needs to be framed to run the next parts of the algorithm, this uses facial features to locate key details in non-ideal conditions.
+Face detection is the process of detecting a face is in the frame, this can be implemented with and without machine learning but modern methods get more speed by using it in the process. After a face is identified, it needs to be framed to run the next parts of the algorithm, this uses facial features to locate key details in non-ideal conditions. \cite{G4G-FaceRecognition}
 
 \subsubsection{Feature Extraction}
-For this stage, the scanned features are converted into a numerical vector which is then used with machine learning to calculate similarity score to be able to locate faces in the database.
+For this stage, the scanned features are converted into a numerical vector which is then used with machine learning to calculate similarity score to be able to locate faces in the database. \cite{G4G-FaceRecognition}
+
 
 \subsubsection{Face Matching}
-From the obtained vector, the values are then verified by measuring the different facial features through geometrical analysis and machine learning models for comparison.
+From the obtained vector, the values are then verified by measuring the different facial features through geometrical analysis and machine learning models for comparison. \cite{G4G-FaceRecognition}
+
